@@ -12,12 +12,12 @@ from PIL import Image, ImageEnhance, ImageGrab, ImageTk
 from bs4 import BeautifulSoup
 
 nordic_colors = {
-    "primary": "#5e81ac",      # muted blue
-    "primary_hover": "#81a1c1", # lighter blue
-    "success": "#a3be8c",       # muted green
-    "success_hover": "#b48ead", # soft purple
-    "danger": "#bf616a",        # muted red
-    "danger_hover": "#d08770",  # warm orange
+    "primary": "#5e81ac",      
+    "primary_hover": "#81a1c1", 
+    "success": "#a3be8c",       
+    "success_hover": "#b48ead", 
+    "danger": "#bf616a",        
+    "danger_hover": "#d08770",  
 }
 
 screenshot = ImageGrab.grab()
@@ -57,7 +57,7 @@ class bigimagebox:
 
             self.canvas.create_image(0, 0, image=self.photo, anchor="nw")
         except Exception as e:
-            print(f"Error displaying image: {e}")
+            print(f"Error displaying image my bad: {e}")
             messagebox.showerror("Image Error", f"Error processing image:\n{e}")
             self.canvas.configure(bg="black")
 
@@ -100,7 +100,7 @@ class bigimagebox:
 
         if right - left < 5 or bottom - top < 5:
             messagebox.showwarning(
-                "Selection Too Small", "Please draw a larger selection area."
+                "Selection Too Small", "Please draw a larger then yourself."
             )
             return
 
@@ -116,7 +116,7 @@ class bigimagebox:
         except Exception as e:
             print(f"Cropping failed: {e}")
             messagebox.showerror(
-                "Cropping Error", f"Failed to crop image:\n{e}"
+                "Cropping Error", f"Failed to crop image my bad:\n{e}"
             )
 
 
@@ -142,7 +142,7 @@ class bluat:
             fg_color=nordic_colors["primary"],
             hover_color=nordic_colors["primary_hover"],
             width=100,
-            corner_radius=6,  # nordic minimalism
+            corner_radius=6, 
         ).pack(side="left", padx=5, pady=5)
 
         ctk.CTkButton(
@@ -198,7 +198,7 @@ class bluat:
         )
 
         if confirm:
-            self.status.configure(text="putting it for search...")
+            self.status.configure(text="put it for search...")
             try:
                 YesImageMe(self.img_path)
                 self.status.configure(text="its... opning")
@@ -238,7 +238,7 @@ class YesImageMe:
 
         page_url = r.json()["data"]["url"]
 
-        # Load the page
+
         page = requests.get(page_url)
         page.raise_for_status()
 
@@ -246,7 +246,7 @@ class YesImageMe:
 
         img_url = None
 
-        # Find the first download link
+
         for a in soup.find_all("a", href=True):
             if "/dl/" in a["href"]:
                 img_url = a["href"]
@@ -277,13 +277,11 @@ def format_text(text):
 
     lines = text.split('\n')
     
-
     while lines and not lines[-1].strip():
         lines.pop()
 
     while lines and not lines[0].strip():
         lines.pop(0)
-    
 
     return '\n'.join(lines)
 
