@@ -1,5 +1,5 @@
 [project]
-name = "linux-lens2-0"
+name = "linux-search"
 version = "0.1.0"
 description = ""
 authors = [
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "linux_lens2"}]
+packages = [{include = "linux-search"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
