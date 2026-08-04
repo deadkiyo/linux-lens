@@ -10,11 +10,10 @@ requires-python = ">=3.10,<3.13"
 dependencies = [
     "pillow (>=12.2.0,<13.0.0)",
     "customtkinter (>=5.2.2,<6.0.0)",
-    "requests (>=2.34.2,<3.0.0)",
-    "nuitka (>=4.1.2,<5.0.0)",
     "kokoro (>=0.9.4,<0.10.0)",
     "easyocr (>=1.7.2,<2.0.0)",
-    "beautifulsoup4 (>=4.15.0,<5.0.0)"
+    "beautifulsoup4 (>=4.15.0,<5.0.0)",
+    "requests (>=2.34.2,<3.0.0)"
 ]
 
 [tool.poetry]

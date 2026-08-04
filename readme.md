@@ -1,8 +1,8 @@
 # linux-lens
 
 a simple script to mimic google lens new feature of circle to search <br>
-* it has a image search which is connected to `imageops` using a `temphost` to store the image for 50min <br><br>
-* for basic `image to text` (osr) you can use the build in osr using the (easyosr) it is much more safer for imp files then using a cloud based solultion <br><br>
+* it has a image search which is connected to `imageops` using a `temphost` to store the image for 50min <br>
+* for basic `image to text` (osr) you can use the build in osr using the (easyosr) it is much more safer for imp files then using a cloud based solultion <br>
 
 ## what it do :
 
@@ -39,9 +39,9 @@ a simple script to mimic google lens new feature of circle to search <br>
 
 
 ## random stuff:
-```
+``
 this is kind of my first mid big project so it has a lot of problem here and there and sorry if you where thinking of using this and it didnt work and this is my 3rd time tried to make this github-repositories i f'ed up a lot while setting up git and broke a lot so 3rd times the charm i geuss 
-```
+``
 
 ## to fix
 
@@ -53,4 +53,4 @@ this is kind of my first mid big project so it has a lot of problem here and the
 
 ---
 
-<center> its under mit so do what you want </center>
+< its under mit so do what you want > 

@@ -1456,24 +1456,6 @@ files = [
 ]
 
 [[package]]
-name = "nuitka"
-version = "4.1.2"
-description = "Python compiler with full language support and CPython compatibility"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "nuitka-4.1.2.tar.gz", hash = "sha256:efc2359b171d7b63046ca8ec8dee57015c3466a9df74b68a049c2c1a7e93ecee"},
-]
-
-[package.extras]
-all = ["imageio", "setuptools (>=42)", "toml", "zstandard (>=0.15)"]
-app = ["zstandard (>=0.15)"]
-build-wheel = ["setuptools (>=42)", "toml", "wheel"]
-icon-conversion = ["imageio"]
-onefile = ["zstandard (>=0.15)"]
-
-[[package]]
 name = "num2words"
 version = "0.5.14"
 description = "Modules to convert numbers to words. Easily extensible."
@@ -4009,4 +3991,4 @@ dev = ["pytest", "setuptools"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.13"
-content-hash = "1d91fd5bc4bf40513573efe344cf25482df6501bd07994085a043601adeaab69"
+content-hash = "d75490cae6289ede8cfd96c22c4e8457e9458478112bbeb46b47bfb2952c72a7"
