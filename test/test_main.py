@@ -25,11 +25,6 @@ screenshot = ImageGrab.grab()
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
 
-def preload_ocr():
-    import sub_osr_pro
-    sub_osr_pro.get_reader()
-
-threading.Thread(target=preload_ocr, daemon=True).start()
 
 class bigimagebox:
     def __init__(self, boxa):
@@ -297,7 +292,6 @@ if __name__ == "__main__":
 
     if hasattr(selector, "tempfile_path"):
         root = ctk.CTk()
-        threading.Thread(target=preload_ocr, daemon=True).start()
         ui = bluat(root, selector.tempfile_path)
         root.mainloop()
     else:
