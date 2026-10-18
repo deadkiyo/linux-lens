@@ -2,7 +2,7 @@
 
 a simple script to mimic google lens new feature of circle to search <br>
 * it has a image search which is connected to `imageops` using a `temphost` to store the image for 50min <br>
-* for basic `image to text` (osr) you can use the build in osr using the (easyosr) it is much more safer for imp files then using a cloud based solultion <br>
+* for basic `image to text` (osr) you can use the build in osr using the (easyosr) it is much more safer for imp files then using a cloud based solution <br>
 
 ## what it do :
 
@@ -19,7 +19,8 @@ a simple script to mimic google lens new feature of circle to search <br>
 
 ## set up :
 
-- linux
+
+- Linux
     
     - get the git
      ` git clone https://github.com/deadkiyo/linux-lens.git `
@@ -28,7 +29,8 @@ a simple script to mimic google lens new feature of circle to search <br>
 
     - make the `run.sh` into a executable file
 
-    - if you are using kde (it can be done in the rest of the windows manager) go the keyboard look for shortcut then set the 'run.sh' add a shortcut 
+    - if you are using kde (it can be done in the rest of the windows manager) go the keyboard look for shortcut then set the 'run.sh' add a shortcut
+    - ps:(edit the run file a little to match your system (the stuff needed to be edited are marked in the file))
     
     - and we are done hope that helped if not sorry my bad
 
@@ -37,6 +39,12 @@ a simple script to mimic google lens new feature of circle to search <br>
     - i dont have a idea on how to set up for windows but i do know it can work somewhat
     for windows (i havent used win in a long time sorry)
 
+-->
+the first time running it will be a little laggy becu the easyocr is getting installed then on. its faster and less system eater
+
+
+for older set up it can be a little slow like 5s to 6s delay on osr mainly for system without gpu
+<--
 
 ## random stuff:
 ``
