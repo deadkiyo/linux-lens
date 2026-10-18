@@ -4,6 +4,23 @@ a simple script to mimic google lens new feature of circle to search <br>
 * it has a image search which is connected to `imageops` using a `temphost` to store the image for 50min <br>
 * for basic `image to text` (osr) you can use the build in osr using the (easyosr) it is much more safer for imp files then using a cloud based solution <br>
 
+
+## package used:
+```
+- json  
+- subprocess, sys
+- tempfile
+- threading
+- tkinter
+- webbrowser 
+- Queue
+- customtkinter 
+- requests
+- PIL 
+- BeautifulSoup
+
+==$ and imageops $==
+```
 ## what it do :
 
 
