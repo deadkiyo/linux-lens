@@ -6,7 +6,7 @@ a simple script to mimic google lens new feature of circle to search <br>
 
 ## video:
 
-![](https://files.catbox.moe/30d4ib.webm)
+![cathost](https://files.catbox.moe/30d4ib.webm)
 ## package used:
 ```
 - json  
